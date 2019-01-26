@@ -1,10 +1,11 @@
 \documentclass[a4paper]{article}
-\usepackage{fullpage}
+\usepackage[left=.7in, right=.7in, top=1in]{geometry}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{textcomp}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{xcolor}
 \textheight=10in
 \pagestyle{empty}
 \raggedright
@@ -72,51 +73,75 @@
 	%==== Profile ====%
 	\vspace*{-10pt}
 	\begin{center}
-		{\Huge \scshape {Hassan Ali}}\\
-		alixx577@umn.edu $\cdot$ (952)261-3308 $\cdot$ linkedin.com/hassanali22 $\cdot$ github.com/HassanAli42\\
+		{\fontsize{40}{48} \scshape \selectfont Hassan Ali}\\
+		\vspace{3mm}
+		{\large {alixx577@umn.edu $\cdot$ (952)261-3308 $\cdot$ linkedin.com/hassanali22 $\cdot$ github.com/HassanAli42}}\\
 	\end{center}
 	
 	%==== Education ====%
-	\header{Education}
+	\header {\large \scshape{Education}}
+	\vspace{1mm}
 	\textbf{University of Minnesota- Twin Cities}\hfill Minneapolis, Minnesota\\
-	BS Computer Engineering \textit{GPA: 3.3} \hfill Sep 2017 - May 2020\\
+	BS Computer Engineering \textit{GPA: 3.18} \hfill Sep 2017 | May 2020\\
 	\vspace{2mm}
 	\textbf{Normandale Community College}\hfill Bloomington, Minnesota\\
-	AS Engineering Broadfield \textit{High Honors} \hfill Aug 2014 - May 2017\\
+	AS Engineering Broadfield \textit{High Honors} \hfill Aug 2014 | May 2017\\
 	\vspace{2mm}
 	
 	%==== Experience ====%
-	\header{Professional Experience}
+	\header{\large \scshape {Professional Experience}}
 	\vspace{1mm}
 	
-	\textbf{IPG Photonics} \hfill Minneapolis, MN\\
-	\textit{Applications Engineer- Intern} \hfill May 2018 | August 2018\\
+	\textbf{IPG Photonics} \hfill Minneapolis, Minnesota\\
+	\textit{Applications Engineer- Intern} \hfill May 2018 | Aug 2018\\
 	\vspace{-1mm}
 	\begin{itemize} \itemsep 1pt
-		\item Assisted with the planning, design, and installation of laser machinery and equipment in an industrial environment, using knowledge of engineering and programming as well as specialized instruments and computers
-		\item Designed and implemented wet cut pump used on Versa stent cutting system, increased system efficiency by 25\%
+		\item Expedited the planning, design, and installation of laser machinery and equipment in an industrial environment, using knowledge of engineering and programming as well as specialized instruments and computers
+		\item Designed and integrated a wet cut pump used on Versa stent cutting system. Increased total system efficiency by 35\%
 	\end{itemize}
 
-	\header{Projects}
-{\textbf{Cloud Office Hours}} {\sl Particle, IOT, HTML} \\
-System designed to send alerts to students in database of professors live availability\\
-\vspace*{2mm}
-{\textbf{Bluetooth Controlled Alarm Clock}} {\sl C, PIC24, Bluetooth UART Controller} \\
-Implemented and designed a wireless accessible alarm clock displayed on an LCD which the settings can be changed through UART module on any mobile device.\\
-\vspace*{2mm}
+	%==== Projects ====%
+	\header{\large \scshape {Projects}}
+	\vspace{1mm}
+	
+	{\textbf{Bluetooth Controlled Alarm Clock}} {\sl C, PIC24, Bluetooth UART Controller} \\
+	\vspace*{-1mm}
+	\begin{itemize} \itemsep 1pt
+		\item Implemented and designed a wireless accessible alarm clock displayed on an LCD which the settings can be changed through UART module on any mobile device.
+	\end{itemize}
+	\vspace*{-1mm}
+	
+	{\textbf{Cloud Office Hours}} {\sl HTML, IOT, Particle} \\
+	\vspace*{-1mm}
+	\begin{itemize} \itemsep 1pt
+		\item Designed system to send alerts to students in database of professors office availability in real time
+	\end{itemize}
+	\vspace*{-1mm}
+	
+	{\textbf{Multi-Process Chat Application}} {\sl C, LINUX} \\
+	\vspace*{-1mm}
+	\begin{itemize} \itemsep 1pt
+		\item Created and designed a central chat server, supporting both private peer-to-peer and group chat features.
+	\end{itemize}
+	\vspace*{-1mm}
+	
+	{\textbf{Analog to Digital Strain Gauge}} {\sl C, MATLAB, PIC24} \\
+	\vspace*{-1mm}
+	\begin{itemize} \itemsep 1pt
+		\item Led a team of three in the construction of an instrumentation amplifier analog to digital convertor system to read the output of a strain gauge type measurement system and display via MATLAB and on LCD. 
+	\end{itemize}
+	\vspace*{2mm}
 
-	%==== Experience ====%
-\header{Leadership and Achievements}
-\vspace{1mm}
-
+	%==== Leadership / Achievments ====%
+	\header{\large \scshape {Leadership and Achievements}}
+	\vspace{1mm}
+	
 	\textbf{National Society of Black Engineers} \hfill Minneapolis, MN\\
 	\textit{Executive Board Member- Publicity Chair} \hfill May 2018 | Present\\
 	\vspace{-1mm}
 	\begin{itemize} \itemsep 1pt
 		\item Promote public awareness of engineering and the opportunities for Blacks and other minorities in that profession
-		\item Stimulate and develop student interest in the various engineering disciplines
-		\item Strive to increase the number of minority students studying engineering at both the undergraduate and graduate levels 
-		\item Increased attendance by 15\%
+		\item Organized a group chat via GroupMe which has increased overall event attendance rate by 35\%
 	\end{itemize}
 	\textbf{Jumpstart} \hfill Minneapolis, MN\\
 	\textit{Student Ambassador} \hfill August 2018 | Present\\
@@ -124,19 +149,18 @@ Implemented and designed a wireless accessible alarm clock displayed on an LCD w
 	\begin{itemize} \itemsep 1pt
 		\item Familiarize Jumpstart\textquotesingle{}s platform and recruit students from University of Minnesota to use the app for a convenient way to get connected with companies \& startups
 		\item Market the Jumpstart app to interested students through information sessions, social media, and digital marketing
-		\item Clarify student questions about Jumpstart\textquotesingle{}s platform \& communicate with staff members on a regular basis for updates and feedback
-		\item Collaborate with other Jumpstart Student Ambassadors at University of Minnesota to brainstorm and prepare creative ways to expand \& improve the Jumpstart app for students across the nation
 	\end{itemize}
-	\textbf{National Science Foundation} \hfill National Science Foundation\\
-	\textit{Award Recipient} \hfill August 2014 | May 2016\\
+	\vspace{-1mm}
+	\textbf{National Science Foundation} \hfill Bloomington, Minnesota\\
+	\textit{Award Recipient} \hfill Aug 2014 | May 2016\\
 	\vspace{-1mm}
 	\begin{itemize} \itemsep 1pt
 		\item Two year scholarship received on outstanding academic excellence
 	\end{itemize}
 	
-	\header{Skills}
+	\header{\large \scshape {Skills}}
 	\begin{tabular}{ l l }
-		Python, Java, C/C++, JavaScript, HTML, CSS, LaTex, Ruby, PHP   \\
+		Python, C, C++, Java, JavaScript, HTML, CSS, SQL, LaTex \\
 	\end{tabular}
 	\vspace{2mm}
 	
